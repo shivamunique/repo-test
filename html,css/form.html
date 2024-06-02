@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Html form
+        </title>
+    </head>
+<body>
+    <h2>
+    Input The Details
+    </h2>
+    <form action="first_css.html" target="_blank" method="GET" >
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="username">
+        <br><br>
+        <label for="pwd">Password:</label>
+        <input type=" password "  id="pwd" name="password">
+        <br><br>
+        <label for="eml">Email:</label>
+        <input type="email" id="eml" name="email">
+        <br><br>
+        <input type="submit" value="register">
+        <input  type="submit" value="reset now">
+        <br><br>
+        <hr>
+  <h3>Which one of these is your favourite fruit ?</h3>
+        <input type="radio" id="apl" name="fruit" value="apple">
+        <label for="apl">Apple</label>
+        <br><br>
+        <input type="radio"  id="berry" name="fruit" value="strawberry">
+        <label for="berry">Strawberry</label>
+        <br><br>
+        <input type="radio" name="fruit" id="banana" value="banana">
+        <label for="banana">Banana</label>
+        <br><br>
+        
+        <input type="submit" >
+        <input type="reset" value="clear responce">
+
+    
+    
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--
+Forms
+<form></form>
+<input> type=text,email,checkbox,radio
+
+Form attributes- action, method, target
+Input attributes- value, type,readonly, disabled,size,maxlength, placeholder, required
+
+value= button, submit, reset value will display as text on the button
+value- text,password- initial value
+radio, checkbox- value associated with input
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+div
+{
+margin:10px;
+}
+
+</style>
+</head>
+<body>
+<h2>checkbox</h2>
+<form>
+Check the gadgets you have:
+<div>
+<input type="checkbox" id="mobile" name="g1" value="mobile">
+<label for="mobile">Mobile Phone</label>
+<br>
+<br>
+<input type="checkbox" id="lp" name="g2" value="laptop">
+<label for="lp">Laptop</label>
+<br>
+<br>
+<input type="checkbox" id="sm" name="g3" value="smartwatch">
+<label for="sm">Smart Watch</label>
+</div>
+<label for="my">Select file:</label>
+<input type="file" id="my">
+<br><br>
+<input type="button" onclick="alert('your file uploaded')" value="submit">
+</form>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+<!--
+Forms
+<form></form>
+<input>
+Attribute- type(text,password,email,radio,checkbox,submit)
+
+Form Attributes
+1. Action,target,method
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+/*input
+{
+background-color:lightgreen;
+padding:5px;
+border-style:none;
+border-radius:6px;
+}*/
+input[type=text],input[type=password],input[type=email]
+{
+background-color:lightgreen;
+padding:5px;
+border-style:none;
+border-radius:6px;
+}
+input[type=submit],input[type=reset]
+{
+background-color:darkgreen;
+color:wheat;
+cursor:pointer;
+padding:8px;
+}
+input[type=submit]:hover,input[type=reset]:hover
+{
+background-color:lime;
+}
+</style>
+</head>
+<body>
+<h2>Forms</h2>
+<form action="thanks.html" target="_blank" method="get">
+<label for="user">Username:</label>
+<input type="text" id="user" name="username">
+<br><br>
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="password">
+<br><br>
+<label for="mail">Email ID:</label>
+<input type="email" id="mail" name="email">
+<br><br>
+<input type="submit" value="Register">
+<input type="reset" value="reset now">
+</form>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--
+Forms
+<form></form>
+<input>
+Input attributes
+1. type(text,password,email,radio,checkbox,submit)
+2. value= button, submit, reset value will display as text on the button
+value- text,password- initial value
+radio, checkbox- value associated with input
+3. Placeholder
+4. maxlength
+5. minlength
+6. size
+7. required
+8. readonly
+9. disabled
+Form Attributes
+1. Action,target,method
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+/*input
+{
+background-color:lightgreen;
+padding:5px;
+border-style:none;
+border-radius:6px;
+}*/
+input[type=text],input[type=password],input[type=email]
+{
+background-color:lightgreen;
+padding:5px;
+border-style:none;
+border-radius:6px;
+}
+input[type=submit],input[type=reset]
+{
+background-color:darkgreen;
+color:wheat;
+cursor:pointer;
+padding:8px;
+}
+input[type=submit]:hover,input[type=reset]:hover
+{
+background-color:lime;
+}
+</style>
+</head>
+<body>
+<h2>Forms</h2>
+<form action="thanks.html" target="_blank" method="get">
+<label for="user">Username:</label>
+<input type="text" id="user" name="username" value="Rahul" disabled>
+<br><br>
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="password" placeholder="type your password here" required maxlength="6" minlength="4">
+<br><br>
+<label for="mail">Email ID:</label>
+<input type="email" id="mail" name="email" size="25">
+<br><br>
+<input type="submit" value="Register">
+<input type="reset" value="reset now">
+</form>
+</body>
+</html>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form>
+<fieldset style="border:2px solid green;border-radius:4px;background-color:pink;">
+<legend>Personal Info</legend>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John"><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" value="Doe"><br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form>
+<textarea name="message" rows="6" cols="40" maxlength="10">Dear Sir/Ma'am, </textarea>
+<br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.list attribute of input field must match with id of datalist</p>
+<form>
+<input list="browsers" name="browser">
+<datalist id="browsers">
+<option value="Internet Explorer">
+<option value="Firefox">
+<option value="Chrome">
+<option value="Opera">
+<option value="Safari">
+</datalist>
+<input type="submit">
+</form>
+<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!-- grid-area:1/1/3/3;
+start row/start col/end row/end col-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS grid</title>
+<style>
+.grid-container
+{
+background-color:green;
+padding:20px;
+display:grid;/*inline-grid*/
+/*grid-template-columns:100px 200px 150px;*/
+/*grid-template-columns:100px auto 200px ;*/
+grid-template-columns:auto auto auto;
+/*grid-template-columns: 100px repeat(3,auto) 150px;*/
+/*grid-template-rows:100px 150px 100px;*/
+grid-template-rows:100px 200px;
+}
+.grid-item
+{
+background-color:lightgreen;
+border:1px solid black;
+padding:15px;
+font-size:38px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1>Grid Elements</h1>
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+<div class="grid-container">
+<div class="grid-item">1</div>
+<div class="grid-item">2</div>
+<div class="grid-item">3</div>
+<div class="grid-item">4</div>
+<div class="grid-item">5</div>
+<div class="grid-item">6</div>
+<div class="grid-item">7</div>
+<div class="grid-item">8</div>
+<div class="grid-item">9</div>
+</div>
+</body>
+</html>

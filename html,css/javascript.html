@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">HI</p>
+<script>
+/*document.getElementById("demo").innerHTML="hello"; */
+alert("hi");
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------
+<!--mouse events  onmouseover , onmouseout-->
+<!DOCTYPE html>
+<html>
+<body>
+<img id="i" onmouseover="bigImg()"
+onmouseout="normalImg()" border="0" src="s1.jpg" width="32" height="32">
+<p>the function bigImg() is triggered when the user moves the mouse pointer over the image</p>
+<p>the function normalImg() is triggered when mouse pointer is moved</p>
+<script>
+function bigImg(){
+document.getElementById('i').style.height="64px";
+document.getElementById('i').style.width = "64px";}
+function normalImg(){
+document.getElementById('i').style.height="20px";
+document.getElementById('i').style.width = "20px";}
+</script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------
+<!--keyboard events-->
+<!-- onkeydown- fired when user is pressing the key-->
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>A function is triggered when the user is pressing a key in the input field</p>
+<input type="text" onkeydown="myFunction()">
+<script>
+function myFunction(){
+alert("you pressed a key inside the input field");
+}
+</script>
+</body>
+</html>
+
+
+<!--onkeyup- when user releases the key -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<p> A function is triggered when the user release a key in the input field.
+</p>
+Enter Your Name: <input type="text" id="fname" onkeyup="myFunction()">
+<script>
+function myFunction(){
+document.getElementById("fname").style.color='red';
+}
+</script>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--FORM EVENTS --> <!--"onreset"-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>when you reset the form, a function is triggered which alerts some text.</p>
+<form onreset="myFunction()">
+<label>Enter Name:</label>
+<input type="text">
+<input type="reset">
+</form>
+<script>
+function myFunction(){
+alert("the form was reset");
+}
+</script>
+</body>
+</html>
+
+
+
+<!--FORM EVENTS --> <!--"onsubmit"-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>when you submit the form, a function is triggered which alerts some text.</p>
+<form onsubmit="myFunction()">
+enter name: <input type="text" name="fname">
+<input type="submit" value = "Submit">
+</form>
+<script>
+function myFunction()
+{
+alert("the form was submitted");
+}
+</script>
+</body>
+</html>
+
+
+<!--FORM EVENTS --> <!--"oninput"-->
+
+<!-- Value property sets or returns the value of the value attribute of the text field-->
+<!-- Oninput attribute is fired when an element gets user input
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>write something in the text field to trigger the function</p>
+<input type = "text" id = "myInput" oninput="myFunction()">
+<p id = "demo"></p>
+<script>
+function myFunction(){
+var x = document.getElementById("myInput").value;
+document.getElementById("demo").innerHTML= "you wrote: " + x;
+}
+</script>
+</body>
+</html>
+
+
+<!--FORM EVENTS --> <!--"onchange"-->
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Select a new car from the list</p>
+<select id = "mySelect" onchange = "myFunction()">
+<option value="">--Select--</option>
+<option value="Audi">Audi</option>
+<option value="BMW">BMW</option>
+<option value="Mercedes">Mercedes</option>
+<option value="VOLVO">VOLVO</option>
+</select>
+<p>When we will select a new car, a function is triggered which outputs
+the value of the selected car</p>
+<p id="demo"></p>
+<script>
+function myFunction(){
+var x= document.getElementById("mySelect").value;
+document.getElementById("demo").innerHTML="you selected: " + x;
+}
+</script>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------
